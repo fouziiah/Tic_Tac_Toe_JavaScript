@@ -1,0 +1,104 @@
+body{
+    position: relative;
+    background:linear-gradient(89.5deg, rgb(104, 208, 232) 1.5%, rgb(231, 144, 245) 100.5%);
+    background-repeat: repeat;
+}
+
+.con{
+    background-color:linear-gradient(89.5deg, rgb(104, 208, 232) 1.5%, rgb(231, 144, 245) 100.5%);;
+    margin-top: 5.4rem;
+    margin-left: 17.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50rem;
+    height: 40.5rem;
+    justify-content: center;
+    animation: zoomIn;
+    animation-duration: 2s;
+  
+}
+
+@keyframes zoomIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#ten{
+    background-color: rgb(255, 255, 255);
+    width: 14rem;
+    height: 13.4rem;
+    border: 3.4px solid black;
+
+   
+ 
+  
+}
+
+#one {
+    border-top-left-radius: 20px;
+}
+#three{
+    border-top-right-radius: 20px;
+}
+#seven{
+    border-bottom-left-radius: 20px;
+}
+#nine{
+    border-bottom-right-radius: 20px;
+}
+
+
+#one, #four, #seven{
+    border-left: none;
+ }
+ #one, #two, #three{
+     border-top: none;
+     border-bottom: none;
+ }
+ #seven, #eight, #nine,  #four, #five, #six{
+     border-bottom: none;
+ }
+ #one, #four, #five,#two, #seven, #eight,  #three, #six, #nine{
+     border-right: none;
+ }
+
+    
+
+.btn{
+    background-color: red;
+    color: rgb(42, 15, 15);
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0.2rem;
+    right: 4rem;
+    background-color: white;
+    border-radius: 10px;
+
+
+}   
+
+.nameTitle{
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+    position: absolute;
+    bottom: 36rem;
+    /* right: 16rem; */
+    left: 28rem;
+   
+}
